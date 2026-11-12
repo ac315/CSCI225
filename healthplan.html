@@ -1,0 +1,71 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>BMI and Calorie Calculator</title>
+    <link rel="stylesheet" href="css/healthplan.css">
+</head>
+
+<body>
+
+    <h1>BMI and Calorie Calculator</h1>
+
+    <p>Enter your information below to calculate your BMI and daily calorie target.</p>
+
+    <form id="healthForm">
+
+        <label for="weight">Weight (kg):</label>
+        <input type="text" id="weight">
+
+        <br><br>
+
+        <label for="height">Height (cm):</label>
+        <input type="text" id="height">
+
+        <br><br>
+
+        <label for="age">Age:</label>
+        <input type="text" id="age">
+
+        <br><br>
+
+        <label for="gender">Gender:</label>
+        <select id="gender">
+            <option value="Men">Men</option>
+            <option value="Women">Women</option>
+        </select>
+
+        <br><br>
+
+        <button type="button" id="calculate">Calculate</button>
+
+    </form>
+
+    <h2>Results</h2>
+
+    <p id="bmiResult">BMI will appear here.</p>
+    <p id="calorieResult">Calorie target will appear here.</p>
+    <p id="categoryResult"></p>
+
+    <h2>BMI Illustration</h2>
+
+    <img id="personImage" src="img/person.png" alt="Person illustration">
+
+    <h2>Suggested Meal Plan</h2>
+
+    <button type="button" id="generate" disabled>
+        Generate Meal Plan
+    </button>
+
+    <ul id="mealList"></ul>
+
+    <p id="mealTotal"></p>
+
+    <script src="js/food_database.js"></script>
+    <script src="js/healthplan.js"></script>
+
+</body>
+
+</html>
